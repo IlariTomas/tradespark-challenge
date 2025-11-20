@@ -3,7 +3,7 @@ Este repositorio contiene la solución al desafío técnico para la posición de
 
 El proyecto implementa un sistema de trading automatizado utilizando el framework `backtrader`, capaz de gestionar múltiples estrategias simultáneas sobre una cartera de activos (MSFT, GOOG, AAPL, TSLA) respetando la independencia de posiciones y capital asignado.
 
-## 📋 Descripción del Desafío
+## Descripción del Desafío
 
 El objetivo fue desarrollar una estrategia combinada que opere bajo las siguientes reglas:
 1.  **Estrategia 1:** Cruce de precio sobre SMA 10.
@@ -12,7 +12,7 @@ El objetivo fue desarrollar una estrategia combinada que opere bajo las siguient
 4.  **Gestión de Capital:** 10% del valor del portfolio por operación, validando liquidez disponible.
 5.  **Separación de Inventarios:** Las ventas solo afectan a las posiciones generadas por su propia estrategia.
 
-## 🚀 Decisiones Técnicas y Arquitectura
+## Decisiones Técnicas y Arquitectura
 
 ### 1. Gestión de Datos (Data Feeds)
 * Los datasets históricos (Año 2021) son descargados mediante yfinance.download().
@@ -27,7 +27,7 @@ Para cumplir con el requisito de *"vender solo lo comprado por esa estrategia"*,
 * Se aplicaron principios de encapsulamiento con métodos auxiliares (`execute_buy`, `execute_sell`) para mantener el loop principal limpio y escalable.
 * Se implementó un sistema de **Logging de Transacciones** y cálculo de **Variación del Portfolio** que se imprime al finalizar la ejecución.
 
-## 🛠️ Instalación y Ejecución
+## Instalación y Ejecución
 
 1. **Clonar el repositorio:**
    git clone https://github.com/IlariTomas/tradespark-challenge.git
