@@ -30,15 +30,23 @@ Para cumplir con el requisito de *"vender solo lo comprado por esa estrategia"*,
 ## Instalación y Ejecución
 
 1. **Clonar el repositorio:**
+   ```bash
    git clone https://github.com/IlariTomas/tradespark-challenge.git
    cd tradespark-challenge
+   ```
 
-2. **Crear y activar un ambiente**
+3. **Crear y activar un ambiente**
+    ```bash
     python -m venv <nombre_ambiente>
     <nombre_ambiente>\Scripts\activate
+    ```
 
-3. **Instalar dependencias**
+5. **Instalar dependencias**
+    ```bash
     pip install -r requirements.txt
+    ```
 
-4. **Ejecutar la estrategia**
+7. **Ejecutar la estrategia**
+    ```bash
     python main.py
+    ```
